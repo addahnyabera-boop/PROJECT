@@ -1,0 +1,248 @@
+/* Reset and base styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  min-height: 100vh;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  width: 100%;
+}
+
+/* Glassmorphism Card */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Header */
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+nav a:hover {
+  color: #ffe16e;
+}
+
+/* Sections */
+section h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+section p, section li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* Contact Form */
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #ffe16e;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ffd700;
+}
+
+/* ✅ Glass Popup Overlay */
+#formOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.2);
+  z-index: 999;
+  justify-content: center;
+  align-items: center;
+  display: none; /* hidden by default */
+}
+
+#formOverlay .popup {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  padding: 40px 60px;
+  text-align: center;
+  color: #000;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Success/Error message under form */
+#messageBox {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+}
+.more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: background 0.3s, transform 0.2s;
+  backdrop-filter: blur(6px);
+}
+
+.more-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+  color: #ffe16e;
+}
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}
+
+.glass:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 40px rgba(255, 255, 255, 0.2);
+}
+@keyframes pulseZoom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.01);
+  }
+}
+
+.glass {
+  animation: pulseZoom 6s ease-in-out infinite;
+}
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ffe16e;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 1rem auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.header-profile {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 1rem;
+}
+
+.tagline {
+  font-style: italic;
+  color: #ffe16e;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+button,
+.more-btn {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover,
+.more-btn:hover {
+  transform: scale(1.05);
+}
+section.glass {
+  opacity: 1;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+section.glass.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hidden {
+  display: none;
+}
+
+
+

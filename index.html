@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADDAH NYABERA | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Profile Header -->
+    <header class="glass header-profile">
+      <img src="images/profile-pic.jpg" alt="ADDAH NYABERA" class="profile-pic" />
+      <h1>ADDAH NYABERA</h1>
+      <p class="tagline">Creative Web Developer | Digital Innovator | Tech Enthusiast</p>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="glass">
+      <h2>About Me</h2>
+      <p>i'm  addah nyabera, a multi- disciplinary creative professional with over 3 years of experience helping businesses streamline operation,enhance their visual identity,and build powerful digital experiences.
+            what started as a passion for art and design has evolved into a versatile skill set that includes graphic design, web development, and virtual assistance. i thrive on challenges and am dedicated to delivering high-quality work that exceeds client expectations.</p>
+    </section>
+
+    <!-- Projects List Section -->
+    <section id="projects" class="glass">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Siaya Digital Hub Website</strong> – A digital learning platform for rural youth.</li>
+        <li><strong>Dr Mavuno Farm Solutions</strong> – A site promoting agricultural innovation.</li>
+        <li><strong>Personal Blog</strong> – Insights on tech, life, and community impact.</li>
+      </ul>
+    </section>
+    
+
+
+    <!-- Featured Projects Section -->
+    <section class="glass">
+      <h2>Featured Projects</h2>
+      <p>Explore some of my key projects that showcase my skills and contributions to the community.</p>
+      <div class="project">
+        <img src="images/project1.jpg" alt="Siaya Digital Hub" />
+        <div class="project-info">
+          <h3>MARKETING AGENCY OPERATIONS</h3>
+          <p>complete operational overhaul including  client communication systems, brand refresh, and new website.streamlined processes that saved 15+ hours per week while improving client satisfaction</p>
+        </div>
+      </div>
+
+      <div class="projects">
+        <img src="images/bakery logo.jpg" alt="Dr Mavuno" />
+        <div class="project-info">
+          <h3>LOCAL BAKERY COMPLETE REBRAND</h3>
+          <p>comprehensive project including logo design,website development and ongoing support.
+                    increased orders by 300% within 6 months though cohesive branding and streamlined operation.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 1rem;">
+        <a href="allproject.html" class="more-btn">View More Projects</a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="glass">
+      <h2>Contact Me</h2>
+      <form action="/contact" method="POST">
+        <label>Name:<br><input type="text" name="name" required /></label><br><br>
+        <label>Email:<br><input type="email" name="email" required /></label><br><br>
+        <label>Message:<br><textarea name="message" required></textarea></label><br><br>
+        <button type="submit">Send</button>
+      </form>
+      <div id="spinner" class="spinner" style="display: none;"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="glass">
+      <p>&copy; 2025 ADDAH NYABERA. All rights reserved.</p>
+    </footer>
+
+  </div>
+  <div id="formOverlay">
+  <div class="popup">Sending your message...</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Addah Nyabera</title>
+  <link rel="stylesheet" href="/ADDAHPROJECT/css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<div id="formOverlay">
+  <div class="popup">Sending your message...</div>
+</div>
+
+<body>
+  <div class="container">
+    <!--#include virtual="sections/header.html" -->
+
+    <section class="glass">
+      <h2>Contact Me</h2>
+
+      <form id="contactForm">
+        <label>Name:<br><input type="text" name="name" required /></label><br><br>
+        <label>Email:<br><input type="email" name="email" required /></label><br><br>
+        <label>Message:<br><textarea name="message" required></textarea></label><br><br>
+        <button type="submit">Send</button>
+      </form>
+      <div id="messageBox" style="margin-top: 20px;"></div>
+
+
+      <div id="messageBox" style="margin-top: 20px;"></div>
+    </section>
+
+    <!--#include virtual="sections/footer.html" -->
+  </div>
+</body>
+</html>
